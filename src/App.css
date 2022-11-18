@@ -1,38 +1,63 @@
-.App {
-  text-align: center;
+.toast_wrapper {
+    position: absolute;
+    right: 10px;
+    top: 70px;
+    z-index: 1;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.myChats_wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 31%;
+    overflow-y: scroll;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.myChats_wrapper::-webkit-scrollbar {
+    display: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.chatBox_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 75%;
+    overflow-y: hidden;
 }
 
-.App-link {
-  color: #61dafb;
+.text-nextline {
+    max-width: 300px;
+    word-break: break-all;
+    white-space: normal;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.chat_content {
+    overflow-y: scroll;
+}
+
+.chat_content::-webkit-scrollbar {
+    display: none;
+}
+
+.display_none {
+    display: none;
+}
+
+@media (max-width: 500px) {
+    .hide_heading {
+        display: none;
+    }
+}
+
+@media (max-width: 700px) {
+    .myChats_wrapper {
+        display: none;
+    }
+
+    .chatBox_wrapper {
+        width: 100%;
+    }
+
+    .display_none {
+        display: inline;
+    }
 }
