@@ -1,9 +1,11 @@
-# Chat App Frontend
+# MERN Stack Chat App
 
 ## [Live URL](https://chat-app-fe.netlify.app) | [Backend Source code](https://github.com/SaiPraneethPegada/Chat-App-Backend.git)
 
 This project is a Full stack chat application developed with Socket.io for real time one on one communication.
 > Key Features: Authorization and Authentication, Password encryption, Profile pic upload(cloudinary), Search user, Real time messaging, New message notification, Fully responsiveness.
+
+This repo consists of frontend source code of the project and Backend source code is found in [Chat-App-Backend](https://github.com/SaiPraneethPegada/Chat-App-Backend.git)
 
 
 ## TECH Stack used:
